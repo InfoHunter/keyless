@@ -579,7 +579,7 @@ int main(int argc, char *argv[])
     {"num-workers",           optional_argument, 0, 8},
     {"help",                  no_argument,       0, 9},
     {"ip",                    required_argument, 0, 10},
-#if PLATFORM_WINDOWS == 0
+#if !PLATFORM_WINDOWS
     {"user",                  required_argument, 0, 11},
     {"daemon",                no_argument,       0, 12},
     {"syslog",                no_argument,       0, 13},
